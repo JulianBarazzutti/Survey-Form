@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+
+<html>
+  
+  <head>
+    <link rel="stylesheet" href="styles.css"> 
+    </head>
+  <body>
+     
+    <main>
+      
+      <h1 id="title" ">Survey Form</h1>
+      <p id="description">Please fill in the details required below</p>
+      <h3>Programming advice survey</h3>
+    
+      <form id="survey-form">
+        <label id="name-label">Name <br><input required id="name" type="text" placeholder="Enter your name">
+        <br>
+
+        </input></label> <br>
+        <label id="email-label">Email <br><input required id="email" type="email" placeholder="Enter your email">
+        <br>
+        </input></label> <br>
+        <label id="number-label">Age <br><input required id="number" type="number" placeholder="Age" min="1" max="100"></input></label> <br>
+        <br>
+        <p id="programing-years">How many years of study it took you to be an expert in programming?</p>
+        <select id="dropdown">
+          
+          <option ></option>
+          <option >less than 1</option>
+          <option >1</option>
+          <option >2</option>
+          <option >3</option>
+          <option >4</option>
+          <option >5</option>
+          <option >more than 5</option>
+        </select> <br>
+          <h3>Which langueaje you like should I learn first?</h3>
+          <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">HTML</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">CSS</label><br>
+
+<input type="radio" id="python" name="fav_language" value="PYTHON">
+  <label for="python">PYTHON</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JAVASCRIPT">
+  <label for="javascript">JAVASCRIPT</label><br>
+
+    <h3>In which companies have you've worked in your career?</h3>
+     <input type="checkbox" id="amazon" name="vehicle1" value="Bike">
+<label for="amazon"> Amazon</label><br>
+<input type="checkbox" id="google" name="vehicle2" value="Amazon">
+<label for="google"> Google</label><br>
+<input type="checkbox" id="Adobe" name="vehicle3" value="Adobe">
+<label for="Adobe"> Adobe</label><br> 
+<input type="checkbox" id="facebook" name="vehicle3" value="Facebook">
+<label for="facebook"> Facebook</label><br> 
+    <h3 id="last" value="last">What advice/s will you give a biginner in programming?</h3>
+    <textarea></textarea><br>
+      
+      
+      <br><input type="submit" value="Submit" id="submit" onclick="msg()">
+
+
+<script>
+function msg() {
+  alert("Survey submitted!");
+}
+</script>
+
+      </form>
+      </main>
+    </body>
+
+  </html>
