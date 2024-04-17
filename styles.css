@@ -64,8 +64,8 @@ img {
 }
 
 input[type="submit"] {
-  background-color: red; /* Red background for the button */
-  color: white; /* White text color */
+  background-color: #B30000; /* Red background for the button */
+  color: #ffffff; /* White text color */
   font-size: 30px; /* Larger font size for better visibility */
   padding: 20px 40px; /* Ample padding to make the button larger and easier to click */
   border: none; /* No border for a cleaner look */
