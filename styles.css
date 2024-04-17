@@ -9,6 +9,13 @@ body {
   line-height: 1.5;
   padding: 10px;
 }
+
+/* Add a semi-transparent white background behind all text content */
+main {
+  background-color: rgba(255, 255, 255, 0.9); /* Adjust the opacity as needed */
+  padding: 20px; /* Add padding to create space between the text and the background */
+}
+
 img {
   max-width: 100%;
   height: auto;
