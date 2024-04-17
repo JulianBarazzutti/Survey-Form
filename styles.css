@@ -62,3 +62,18 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+input[type="submit"] {
+  background-color: red; /* Red background for the button */
+  color: white; /* White text color */
+  font-size: 30px; /* Larger font size for better visibility */
+  padding: 20px 40px; /* Ample padding to make the button larger and easier to click */
+  border: none; /* No border for a cleaner look */
+  border-radius: 10px; /* Rounded corners for a modern appearance */
+  cursor: pointer; /* Changes cursor to a pointer to indicate it's clickable */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+input[type="submit"]:hover {
+  background-color: darkred; /* Slightly darker red when hovered for interactive feel */
+}
