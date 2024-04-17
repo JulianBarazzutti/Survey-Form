@@ -1,77 +1,109 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Survey Form</title> 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="This is a survey form for collecting programming advice.">
-  <link rel="stylesheet" href="styles.css"> 
-</head>
-<body>
-<main>
-  <h1 id="title">Survey Form</h1><br>
-  <p id="description">Please fill in the details required below</p>
-  <section>
-    <h2>General Information</h2>
-    <form id="survey-form">
-      <label for="name">Name:</label>
-      <input required id="name" type="text" placeholder="Enter your name">
+  <head>
+    <title>Survey Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is a survey form for collecting programming advice."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1 id="title">Survey Form</h1>
+      <br />
+      <p id="description">Please fill in the details required below</p>
+      <section>
+        <h2>General Information</h2>
+        <form id="survey-form">
+          <label for="name">Name:</label>
+          <input required id="name" type="text" placeholder="Enter your name" />
 
-      <label for="email">Email:</label>
-      <input required id="email" type="email" placeholder="Enter your email">
+          <label for="email">Email:</label>
+          <input
+            required
+            id="email"
+            type="email"
+            placeholder="Enter your email"
+          />
 
-      <label for="number">Age:</label>
-      <input required id="number" type="number" placeholder="Age" min="1" max="100">
-  </section>
+          <label for="number">Age:</label>
+          <input
+            required
+            id="number"
+            type="number"
+            placeholder="Age"
+            min="1"
+            max="100"
+          />
+        </form>
+      </section>
 
-  <section>
-    <h2>Programming Experience</h2>
-    <p>How many years of study did it take you to become an expert in programming?</p>
-    <br>
-    <select id="dropdown" name="years-of-study">
-      <option value=""></option>
-      <option value="less-than-1">Less than 1 year</option>
-      <option value="1">1 year</option>
-      <option value="2">2 years</option>
-      <option value="3">3 years</option>
-      <option value="4">4 years</option>
-      <option value="5">5 years</option>
-      <option value="more-than-5">More than 5 years</option>
-    </select>
-  </section>
+      <section>
+        <h2>Programming Experience</h2>
+        <p>
+          How many years of study did it take you to become an expert in
+          programming?
+        </p>
+        <br />
+        <label for="dropdown">Years of Programming Study:</label> <br />
+        <select id="dropdown" name="years-of-study">
+          <option value=""></option>
+          <option value="less-than-1">Less than 1 year</option>
+          <option value="1">1 year</option>
+          <option value="2">2 years</option>
+          <option value="3">3 years</option>
+          <option value="4">4 years</option>
+          <option value="5">5 years</option>
+          <option value="more-than-5">More than 5 years</option>
+        </select>
+        <br />
+      </section>
 
-  <section>
-    <h2>Programming Language Recommendations</h2>
-    <br>
-    <p>Which language should a student learn first?</p>
-    <input type="radio" id="html" name="fav_language" value="HTML">
-    <label for="html">HTML</label>
-    <input type="radio" id="css" name="fav_language" value="CSS">
-    <label for="css">CSS</label>
-    <input type="radio" id="python" name="fav_language" value="PYTHON">
-    <label for="python">Python</label>
-    <input type="radio" id="javascript" name="fav_language" value="JAVASCRIPT">
-    <label for="javascript">JavaScript</label>
-  </section>
+      <section>
+        <h2>Programming Language Recommendations</h2>
+        <br />
+        <p>Which language should a student learn first?</p>
+        <input type="radio" id="html" name="fav_language" value="HTML" />
+        <label for="html">HTML</label>
+        <input type="radio" id="css" name="fav_language" value="CSS" />
+        <label for="css">CSS</label>
+        <input type="radio" id="python" name="fav_language" value="PYTHON" />
+        <label for="python">Python</label>
+        <input
+          type="radio"
+          id="javascript"
+          name="fav_language"
+          value="JAVASCRIPT"
+        />
+        <label for="javascript">JavaScript</label>
+      </section>
 
-  <section>
-    <h2>Employment Background</h2><br>
-    <p>In which companies have you worked along your career?</p><br><br>
-    <input type="checkbox" id="amazon" name="company" value="Amazon">
-    <label for="amazon">Amazon</label>
-    <input type="checkbox" id="google" name="company" value="Google">
-    <label for="google">Google</label>
-    <input type="checkbox" id="adobe" name="company" value="Adobe">
-    <label for="adobe">Adobe</label>
-    <input type="checkbox" id="facebook" name="company" value="Facebook">
-    <label for="facebook">Facebook</label>
-  </section>
+      <section>
+        <h2>Employment Background</h2>
+        <br />
+        <p>In which companies have you worked along your career?</p>
+        <br /><br />
+        <input type="checkbox" id="amazon" name="company" value="Amazon" />
+        <label for="amazon">Amazon</label>
+        <input type="checkbox" id="google" name="company" value="Google" />
+        <label for="google">Google</label>
+        <input type="checkbox" id="adobe" name="company" value="Adobe" />
+        <label for="adobe">Adobe</label>
+        <input type="checkbox" id="facebook" name="company" value="Facebook" />
+        <label for="facebook">Facebook</label>
+      </section>
 
-  <section>
-    <h2>Advice for Beginners</h2>
-    <textarea id="advice" name="advice" placeholder="What advice would you give to a beginner in programming?"></textarea>
-    <input type="submit" value="Submit" id="submit">
-  </section>
-</form>
-</main>
-</body>
+      <section>
+        <h2>Advice for Beginners</h2>
+        <textarea
+          id="advice"
+          name="advice"
+          placeholder="What advice would you give to a beginner in programming?"
+        ></textarea>
+        <input type="submit" value="Submit" id="submit" />
+      </section>
+    </main>
+  </body>
 </html>
