@@ -11,8 +11,22 @@ body {
 }
 
 /* Ensuring each text-containing element has a white background */
-h1, h2, h3, p, label, textarea, input[type="text"], input[type="email"], input[type="number"], select {
-  background-color: rgba(255, 255, 255, 0.9); /* semi-transparent white background */
+h1,
+h2,
+h3,
+p,
+label,
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* semi-transparent white background */
   padding: 10px; /* padding around text */
   display: inline-block; /* use inline-block to fit the content's width */
   margin-bottom: 10px; /* space between elements */
@@ -20,10 +34,10 @@ h1, h2, h3, p, label, textarea, input[type="text"], input[type="email"], input[t
 }
 
 /* Specific adjustments for larger form elements */
-input[type="text"], 
-input[type="email"], 
-input[type="number"], 
-textarea, 
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
 select {
   width: auto; /* adjusting width to fit the content */
   box-sizing: border-box; /* includes padding and border in the element's width */
@@ -36,7 +50,9 @@ textarea {
 }
 
 /* Enhance visibility and aesthetics of buttons */
-input[type="submit"], input[type="radio"], input[type="checkbox"] {
+input[type="submit"],
+input[type="radio"],
+input[type="checkbox"] {
   background-color: red; /* button color */
   color: white; /* text color */
   padding: 12px 20px; /* padding inside the button */
@@ -47,7 +63,8 @@ input[type="submit"], input[type="radio"], input[type="checkbox"] {
 }
 
 /* Enhance radio buttons and checkboxes by excluding background */
-input[type="radio"], input[type="checkbox"] {
+input[type="radio"],
+input[type="checkbox"] {
   background-color: transparent; /* make these elements background transparent */
   width: auto; /* default width */
   margin-right: 5px; /* space between checkbox/radio and label */
@@ -64,7 +81,7 @@ img {
 }
 
 input[type="submit"] {
-  background-color: #B30000; /* Red background for the button */
+  background-color: #b30000; /* Red background for the button */
   color: #ffffff; /* White text color */
   font-size: 30px; /* Larger font size for better visibility */
   padding: 20px 40px; /* Ample padding to make the button larger and easier to click */
