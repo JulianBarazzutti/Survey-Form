@@ -1,5 +1,4 @@
 body {
-
   background-image: url("https://images.pexels.com/photos/4792729/pexels-photo-4792729.jpeg");
   background-size: cover;
   background-position: center;
@@ -11,23 +10,54 @@ body {
   padding: 10px;
 }
 
-/* Add a white background behind each text individually */
-h1,
-h3,
-h4,
-p,
-label,
-textarea {
-  background-color: rgba(255, 255, 255, 0.9); /* Adjust the opacity as needed */
-  padding: 10px; /* Add padding to create space between the text and the background */
-  display: inline-block; /* Ensure each element is displayed as an inline block */
-  margin-bottom: 10px; /* Add margin to create space between elements */
-}
-textarea {
-  font-size: 14px; /* Match the font size of the h3 title */
-  width: calc(100% - 700px); /* Calculate the width to match the container minus padding */
+/* Ensuring each text-containing element has a white background */
+h1, h2, h3, p, label, textarea, input[type="text"], input[type="email"], input[type="number"], select {
+  background-color: rgba(255, 255, 255, 0.9); /* semi-transparent white background */
+  padding: 10px; /* padding around text */
+  display: inline-block; /* use inline-block to fit the content's width */
+  margin-bottom: 10px; /* space between elements */
+  border-radius: 5px; /* optional: adds rounded corners to the backgrounds */
 }
 
+/* Specific adjustments for larger form elements */
+input[type="text"], 
+input[type="email"], 
+input[type="number"], 
+textarea, 
+select {
+  width: auto; /* adjusting width to fit the content */
+  box-sizing: border-box; /* includes padding and border in the element's width */
+}
+
+textarea {
+  height: 150px; /* setting a fixed height for textarea */
+  font-size: 18px; /* larger font size for better readability */
+  width: 100%; /* maintaining full width for better usability */
+}
+
+/* Enhance visibility and aesthetics of buttons */
+input[type="submit"], input[type="radio"], input[type="checkbox"] {
+  background-color: red; /* button color */
+  color: white; /* text color */
+  padding: 12px 20px; /* padding inside the button */
+  border: none; /* remove default border */
+  border-radius: 5px; /* rounded corners */
+  font-size: 20px; /* larger font size for visibility */
+  cursor: pointer; /* cursor indicates clickable */
+}
+
+/* Enhance radio buttons and checkboxes by excluding background */
+input[type="radio"], input[type="checkbox"] {
+  background-color: transparent; /* make these elements background transparent */
+  width: auto; /* default width */
+  margin-right: 5px; /* space between checkbox/radio and label */
+}
+
+label {
+  display: inline; /* labels aligned with checkboxes/radios */
+}
+
+/* Additional styling for images, if any are included */
 img {
   max-width: 100%;
   height: auto;
